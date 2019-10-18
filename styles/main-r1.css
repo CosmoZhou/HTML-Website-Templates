@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+h1,
+h4 {
+  text-align: center;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.col {
+  padding: 1rem;
+}
+@media (min-width: 650px) {
+  .col {
+    width: 50%;
+    float: left;
+  }
+  .col:nth-of-type(2n+1) {
+    clear: left;
+  }
+}
+
+.card {
+  display: block;
+  text-align: center;
+  color: #eeeeee;
+}
+.card .content {
+  padding: 4rem 1rem;
+}
+.card .title {
+  font-size: 1.25rem;
+  background-color: gray;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.card-1 .content {
+  background-color: #b8cad8 !important;
+  border-radius: 3px;
+}
+.card-1:before, .card-1:after {
+  border-radius: 3px;
+}
+.card-1:before {
+  background-color: #87a5bd !important;
+}
+.card-1 .title, .card-1:after {
+  background-color: #5880a0 !important;
+}
+
+.card-2 .content {
+  background-color: #c596b1 !important;
+  border-radius: 3px;
+}
+.card-2:before, .card-2:after {
+  border-radius: 3px;
+}
+.card-2:before {
+  background-color: #aa658d !important;
+}
+.card-2 .title, .card-2:after {
+  background-color: #7d4566 !important;
+}
+
+.card-3 .content {
+  background-color: #e4e8e1 !important;
+  border-radius: 3px;
+}
+.card-3:before, .card-3:after {
+  border-radius: 3px;
+}
+.card-3:before {
+  background-color: #bec7b5 !important;
+}
+.card-3 .title, .card-3:after {
+  background-color: #98a689 !important;
+}
+
+.card-4 .content {
+  background-color: #d2b9d8 !important;
+  border-radius: 3px;
+}
+.card-4:before, .card-4:after {
+  border-radius: 3px;
+}
+.card-4:before {
+  background-color: #b388bd !important;
+}
+.card-4 .title, .card-4:after {
+  background-color: #9259a0 !important;
+}
+
+.card-5 .content {
+  background-color: #c6cccf !important;
+  border-radius: 3px;
+}
+.card-5:before, .card-5:after {
+  border-radius: 3px;
+}
+.card-5:before {
+  background-color: #9ca7ac !important;
+}
+.card-5 .title, .card-5:after {
+  background-color: #738289 !important;
+}
+
+.card-6 .content {
+  background-color: #bab7ac !important;
+  border-radius: 3px;
+}
+.card-6:before, .card-6:after {
+  border-radius: 3px;
+}
+.card-6:before {
+  background-color: #979382 !important;
+}
+.card-6 .title, .card-6:after {
+  background-color: #706c5d !important;
+}
+
+.card-7 .content {
+  background-color: #d1e1c3 !important;
+  border-radius: 3px;
+}
+.card-7:before, .card-7:after {
+  border-radius: 3px;
+}
+.card-7:before {
+  background-color: #a9c890 !important;
+}
+.card-7 .title, .card-7:after {
+  background-color: #81af5d !important;
+}
+
+.card-8 .content {
+  background-color: #adbfbb !important;
+  border-radius: 3px;
+}
+.card-8:before, .card-8:after {
+  border-radius: 3px;
+}
+.card-8:before {
+  background-color: #829d98 !important;
+}
+.card-8 .title, .card-8:after {
+  background-color: #5d7671 !important;
+}
+
+.card-9 .content {
+  background-color: #b2cbd5 !important;
+  border-radius: 3px;
+}
+.card-9:before, .card-9:after {
+  border-radius: 3px;
+}
+.card-9:before {
+  background-color: #81aaba !important;
+}
+.card-9 .title, .card-9:after {
+  background-color: #54879a !important;
+}
+
+.card-10 .content {
+  background-color: #afb39d !important;
+  border-radius: 3px;
+}
+.card-10:before, .card-10:after {
+  border-radius: 3px;
+}
+.card-10:before {
+  background-color: #8c9272 !important;
+}
+.card-10 .title, .card-10:after {
+  background-color: #636750 !important;
+}
+
+[class*='stacked--'] {
+  position: relative;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  will-change: transform;
+}
+[class*='stacked--']:before, [class*='stacked--']:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  will-change: transform;
+}
+[class*='stacked--']:before {
+  z-index: -1;
+}
+[class*='stacked--']:after {
+  z-index: -2;
+}
+
+.stacked--left:before, .stacked--left:after {
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+.stacked--left:hover {
+  -webkit-transform: translate(-5px, 0);
+          transform: translate(-5px, 0);
+}
+
+.stacked--right:before, .stacked--right:after {
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.stacked--right:hover {
+  -webkit-transform: translate(5px, 0);
+          transform: translate(5px, 0);
+}
+.stacked--right:hover:before {
+  -webkit-transform: translate(-5px, 0) scale(0.95);
+          transform: translate(-5px, 0) scale(0.95);
+}
+.stacked--right:hover:after {
+  -webkit-transform: translate(-10px, 0) scale(0.9);
+          transform: translate(-10px, 0) scale(0.9);
+}
+
+.stacked--up:before, .stacked--up:after {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.stacked--up:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+.stacked--up:hover:before {
+  -webkit-transform: translate(0, 5px) scale(0.95);
+          transform: translate(0, 5px) scale(0.95);
+}
+.stacked--up:hover:after {
+  -webkit-transform: translate(0, 10px) scale(0.9);
+          transform: translate(0, 10px) scale(0.9);
+}
+
+.stacked--down:before, .stacked--down:after {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+.stacked--down:hover {
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+}
+.stacked--down:hover:before {
+  -webkit-transform: translate(0, -5px) scale(0.95);
+          transform: translate(0, -5px) scale(0.95);
+}
+.stacked--down:hover:after {
+  -webkit-transform: translate(0, -10px) scale(0.9);
+          transform: translate(0, -10px) scale(0.9);
+}
+
+.stacked--up-left:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+.stacked--up-left:hover:before {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+.stacked--up-left:hover:after {
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+}
+
+.stacked--up-right:hover {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+.stacked--up-right:hover:before {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+.stacked--up-right:hover:after {
+  -webkit-transform: translate(-10px, 10px);
+          transform: translate(-10px, 10px);
+}
+
+.stacked--down-left:hover {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+.stacked--down-left:hover:before {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+.stacked--down-left:hover:after {
+  -webkit-transform: translate(10px, -10px);
+          transform: translate(10px, -10px);
+}
+
+.stacked--down-right:hover {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+.stacked--down-right:hover:before {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+.stacked--down-right:hover:after {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+}
+
+.stacked--fan-left {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.stacked--fan-left:before, .stacked--fan-left:after {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.stacked--fan-left:hover {
+  -webkit-transform: translate(-2.5px, 0) rotate(-2.5deg);
+          transform: translate(-2.5px, 0) rotate(-2.5deg);
+}
+.stacked--fan-left:hover:before {
+  -webkit-transform: translate(2.5px, 0) rotate(2.5deg);
+          transform: translate(2.5px, 0) rotate(2.5deg);
+}
+.stacked--fan-left:hover:after {
+  -webkit-transform: translate(5px, 0) rotate(5deg);
+          transform: translate(5px, 0) rotate(5deg);
+}
+
+.stacked--fan-right {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.stacked--fan-right:before, .stacked--fan-right:after {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+.stacked--fan-right:hover {
+  -webkit-transform: translate(2.5px, 0) rotate(2.5deg);
+          transform: translate(2.5px, 0) rotate(2.5deg);
+}
+.stacked--fan-right:hover:before {
+  -webkit-transform: translate(-2.5px, 0) rotate(-2.5deg);
+          transform: translate(-2.5px, 0) rotate(-2.5deg);
+}
+.stacked--fan-right:hover:after {
+  -webkit-transform: translate(-5px, 0) rotate(-5deg);
+          transform: translate(-5px, 0) rotate(-5deg);
+}
+
+.movie_card {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 350px;
+  margin: 80px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 120px -25px rgba(0, 0, 0, 0.5);
+}
+.movie_card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+
+.movie_card .locandina {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  height: 120px;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.movie_card .title {
+  font-size: 1.25rem;
+  background-color: gray;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.card-1 .content {
+  background-color: #b8cad8 !important;
+  border-radius: 3px;
+}
+.card-1:before, .card-1:after {
+  border-radius: 3px;
+}
+.card-1:before {
+  background-color: #87a5bd !important;
+}
+.card-1 .title, .card-1:after {
+  background-color: #5880a0 !important;
+}
+
+

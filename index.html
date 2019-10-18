@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>垂钓天下</title>
+<!--  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>-->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">    
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/pci_size_sm.css">
+  <link rel="stylesheet" href="./styles/pic_size_xs.css">
+  <link rel="stylesheet" href="./styles/pic_size_lg.css">
+<!--
+  <style>
+      #fishing { width: 85%}
+  </style>
+-->
+</head>    
+    
+<body>
+    
+<nav class="navbar fixed-top navbar-dark navbar-expand-sm">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" height=100 class="" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse flex-column align-items-start" id="navbar">
+    <ul class="navbar-nav nav my-1 w-100">
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#property-tab" style="font-size: 50px;">垂钓天下</a>
+      </li>
+      <form class="form-inline ml-auto">
+        <input class="form-control search" type="text" id="search-bar" placeholder="Search..." autocomplete="off" spellcheck="false" autocorrect="off" />
+      </form>
+    </ul>
+    <ul class="navbar-nav nav my-1" style="font-size: 40px; padding-top: 10px; position: relative;">
+      <li class="nav-item active"><a href="./index.html" class="nav-link">首页</a></li>
+      <li class="nav-item"><a href="{{ url_for('re_men_tui_jian') }}" class="nav-link">精彩瞬间</a></li>
+      <li class="nav-item"><a href="{{ url_for('re_men_tui_jian') }}" class="nav-link">热门推荐</a></li>
+      <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">特色赛事</a></li>
+      <li class="nav-item"><a href="./index-t1.html" class="nav-link">系列赛事</a></li>
+      <li class="nav-item"><a href="./winner.html" class="nav-link">大师排行</a></li>
+      <li class="nav-item"><a href="{{ url_for('diao_yu_pai_hang_bang') }}" class="nav-link">钓场技巧</a></li>
+      <li class="nav-item"><a href="{{ url_for('da_shi_long_hu_bang') }}" class="nav-link">赛事报道</a></li>
+      <li class="nav-item"><a href="{{ url_for('chui_diao_ji_qiao') }}" class="nav-link">趣味野钓</a></li>
+<!--      <li class="nav-item"><a href="{{ url_for('can_yu_sai_shi') }}" class="nav-link">报名参赛</a></li>-->
+      <li class="nav-item"><a href="./introduction.html" class="nav-link">公司介绍</a></li>       
+    </ul>
+  </div>
+</nav> 
+    
+    
+<div style="margin-right: 100px;margin-left: 100px;" id="fishing">    
+<div class="wrapper">
+<div class="row">
+<div class="col-md-6 image-grid-item">
+  <div class="movie_card" id="bright">
+  <div class="blur_back p1_r1_c1"></div>
+  <div class="card" >
+    <div class="card__content">    
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span>大</span><span>大</span></span>
+          <span><span>鱼</span><span>鱼</span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>黄桥大鱼双人赛</span>
+          </span>
+          <span>
+            <span><span>黄桥大鱼双人赛</span></span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>    
+</div>
+
+</div>
+
+<div class="col-md-6 image-grid-item">            
+<div class="movie_card" id="ave">
+<div class="blur_back p1_r1_c2"></div>
+<div class="card" >
+  <div class="card__content">    
+    <div class="card__content--description">
+      <h3 class="roll-up">
+         <span><span>坐</span><span>坐</span></span>
+         <span><span>着</span><span>着</span></span>
+         <span><span>小</span><span>小</span></span>
+         <span><span>船</span><span>船</span></span>
+         <span><span>儿</span><span>儿</span></span>
+         <span><span>去</span><span>去</span></span>
+         <span><span>钓</span><span>钓</span></span>
+         <span><span>鱼</span><span>鱼</span></span>
+      </h3>
+      <p class="text-reveal">
+        <span>
+          <span>海钓俱乐部锦标赛</span>
+        </span>
+        <span>
+          <span><span>海钓俱乐部锦标赛</span></span>
+        </span>
+      </p>
+      </div>
+    </div>
+  </div>    
+</div>
+</div>            
+                
+<div class="col-md-3 image-grid-item">                        
+  <div class="movie_card">
+  <div class="blur_back p1_r2_c1"></div>
+  <div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span>山</span><span>山</span></span>
+          <span><span>水</span><span>水</span></span>
+          <span><span>间</span><span>间</span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>升钟湖国际舟钓大赛</span>
+          </span>
+          <span>
+            <span><span>升钟湖国际舟钓大赛</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>
+</div>
+    </div>    
+    
+<div class="col-md-6 image-grid-item">   
+<div class="row">
+<div class="col-12">
+<div class="movie_card_xs">
+<div class="blur_back p1_r2_c2"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span>巅</span><span>巅</span></span>
+          <span><span>峰</span><span>峰</span></span>
+          <span><span>对</span><span>对</span></span>
+          <span><span>决</span><span>决</span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>全能王锦标赛（决赛）</span>
+          </span>
+          <span>
+            <span><span>全能王锦标赛（决赛）</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split row -->
+
+<div class="col-12">
+<div class="row">
+<div class="col-md-6 image-grid-item">
+<div class="movie_card_xs">
+<div class="blur_back p1_r2_c2_a1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>大运河河钓大赛</span>
+          </span>
+          <span>
+            <span><span>大运河河钓大赛</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div> <!-- split col-->
+</div>
+    
+<div class="col-md-6 image-grid-item">
+<div class="movie_card_xs">
+<div class="blur_back p1_r2_c2_b1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>全国大师巡回赛</span>
+          </span>
+          <span>
+            <span><span>全国大师巡回赛</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split col-->
+</div> <!-- split row2-->  
+</div>    
+</div>          
+</div>
+    
+<div class="col-md-3 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r2_c3"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>俱乐部挑战赛</span>
+          </span>
+          <span>
+            <span><span>俱乐部挑战赛</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>
+
+<H3 style="background-color: yellow;color: black;font-weight: 600;margin: 10px auto;margin-left: 100px;">大师教你学钓鱼</H3>
+
+<div class="col-12">
+<div class="row">    
+<div class="col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c1"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>初级垂钓</span>
+          </span>
+          <span>
+            <span><span>初级垂钓</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>
+
+<div class="col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c2"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>鱼竿</span>
+          </span>
+          <span>
+            <span><span>鱼竿</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>    
+    
+    
+<div class="col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c3"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>舟钓路亚</span>
+          </span>
+          <span>
+            <span><span>舟钓路亚</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>    
+    
+<div class="col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c4"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>饵料搭配</span>
+          </span>
+          <span>
+            <span><span>饵料搭配</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>
+    
+<div class="col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c5"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>海钓技巧</span>
+          </span>
+          <span>
+            <span><span>海钓技巧</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>
+    
+<div class="col-sm-2 col-md-2 image-grid-item">            
+<div class="movie_card">
+<div class="blur_back p1_r3_c6"></div>
+<div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>鱼情分析</span>
+          </span>
+          <span>
+            <span><span>鱼情分析</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>        
+</div>    
+</div>    
+</div>
+</div>
+
+    
+<H3 style="background-color: yellow;color: black;font-weight: 600;margin: 10px auto;margin-left: 100px;">精彩瞬间</H3>
+<H3 style="background-color: yellow;color: black;font-weight: 600;margin: 10px auto;margin-left: 10px;">趣味野钓</H3>
+<H3 style="background-color: yellow;color: black;font-weight: 600;margin: 10px auto;margin-left: 10px;">龙虎榜</H3>
+
+<!-- row-#4 -->    
+<div class="col-12">
+<div class="row">
+
+<!-- row-#3-col -->        
+<div class="col-md-4 image-grid-item">
+<!-- row-#4-3col-1 -->
+<div class="col-12">
+<div class="row">    
+<div class="col-md-6 image-grid-item">
+<div class="col-12">    
+<div class="movie_card">
+<div class="blur_back p1_r4_c1_a1"></div>
+    <div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+    
+<div class="col-12">    
+<div class="movie_card">
+<div class="blur_back p1_r4_c1_b1"></div>
+    <div class="movie">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>    
+    
+    
+</div> <!-- split row -->
+<div class="col-md-6 image-grid-item">    
+<div class="movie_card_lg">
+<div class="blur_back p1_r4_c1_a2"></div>
+    <div class="card_lg">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split row -->
+
+    
+</div>
+</div>
+
+
+    
+    
+    
+    </div>
+    
+<div class="col-md-4 image-grid-item">   
+<div class="row">
+<div class="col-12">
+<div class="movie_card_sm">
+<div class="blur_back p1_r4_c2_a1"></div>
+    <div class="card_sm">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split row -->
+
+<div class="col-12">
+<div class="movie_card_sm">
+<div class="blur_back p1_r4_c2_b1"></div>
+    <div class="card_sm">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split row -->
+    
+    
+<div class="col-12">
+<div class="movie_card_sm">
+<div class="blur_back p1_r4_c2_c1"></div>
+    <div class="card_sm">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div> <!-- split row -->    
+</div>          
+</div>
+<!-- row-#4-col3-->    
+<div class="col-4 image-grid-item">
+<div class="row">
+<div class="col-6" style="padding-right: 0px; padding-left: 10px;">
+
+<div class="col-12 image-grid-item">    
+<div class="movie_card_xs">
+<div class="blur_back p1_r4_c3_a1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+<div class="col-12 image-grid-item">    
+<div class="movie_card_xs">
+<div class="blur_back p1_r4_c3_b1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+<div class="col-12 image-grid-item">    
+<div class="movie_card_xs">
+<div class="blur_back p1_r4_c3_c1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+<div class="col-12 image-grid-item">    
+<div class="movie_card_xs">
+<div class="blur_back p1_r4_c3_d1"></div>
+    <div class="card_xs">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span></span>
+          </span>
+          <span>
+            <span><span></span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+    </div>
+    
+    
+<div class="col-6" style="padding-right: 0px; padding-left: 1px;">        
+<div class="col-12 image-grid-item">
+<div class="movie_card">
+<div class="blur_back p1_r4_c3_a2"></div>
+    <div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>最美渔场</span>
+          </span>
+          <span>
+            <span><span>最美渔场</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>
+<div class="col-12 image-grid-item">
+<div class="movie_card">
+<div class="blur_back p1_r4_c3_b2"></div>
+    <div class="card">
+    <div class="card__content">
+      <div class="card__content--description">
+        <h3 class="roll-up">
+          <span><span></span><span></span></span>
+        </h3>
+        <p class="text-reveal">
+          <span>
+            <span>赛事报名</span>
+          </span>
+          <span>
+            <span><span>赛事报名</span></span>
+          </span>
+        </p>
+      </div>
+    </div>    
+  </div>    
+</div>
+</div>      
+        
+    </div>
+    </div>
+    </div>
+</div>    
+</div> <!--row-#4-end-->    
+    
+
+</div>
+</div>    
+    </div>    
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.0.1/color-thief.min.js'></script>
+    <script src='./js/bootstrap.min.js'></script>
+</body>
+</html>

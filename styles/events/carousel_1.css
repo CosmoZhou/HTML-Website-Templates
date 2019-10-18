@@ -1,0 +1,15 @@
+.col-md-4{
+  display: inline-block;
+  margin-left:-4px;
+}
+body .carousel-indicators li{
+  background-color:red;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+  background-color:red;
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}

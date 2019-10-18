@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>公司介绍</title>
+  <link rel="stylesheet" href="./styles/introduct.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/style.css">    
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">    
+    
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-dark navbar-expand-sm">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" height=100 class="" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse flex-column align-items-start" id="navbar">
+    <ul class="navbar-nav nav my-1 w-100">
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#property-tab" style="font-size: 50px;">垂钓天下</a>
+      </li>
+      <form class="form-inline ml-auto">
+        <input class="form-control search" type="text" id="search-bar" placeholder="Search..." autocomplete="off" spellcheck="false" autocorrect="off" />
+      </form>
+    </ul>
+    <ul class="navbar-nav nav my-1" style="font-size: 40px; padding-top: 10px; position: relative;">
+      <li class="nav-item active"><a href="./index.html" class="nav-link" target="page1">首页</a></li>
+      <li class="nav-item"><a href="{{ url_for('re_men_tui_jian') }}" class="nav-link">精彩瞬间</a></li>
+      <li class="nav-item"><a href="{{ url_for('re_men_tui_jian') }}" class="nav-link">热门推荐</a></li>
+      <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">特色赛事</a></li>
+      <li class="nav-item"><a href="./index-t1.html" class="nav-link">系列赛事</a></li>
+      <li class="nav-item"><a href="./winner.html" class="nav-link">大师排行</a></li>
+      <li class="nav-item"><a href="{{ url_for('diao_yu_pai_hang_bang') }}" class="nav-link">钓场技巧</a></li>
+      <li class="nav-item"><a href="{{ url_for('da_shi_long_hu_bang') }}" class="nav-link">赛事报道</a></li>
+      <li class="nav-item"><a href="{{ url_for('chui_diao_ji_qiao') }}" class="nav-link">趣味野钓</a></li>
+<!--      <li class="nav-item"><a href="{{ url_for('can_yu_sai_shi') }}" class="nav-link">报名参赛</a></li>-->
+      <li class="nav-item"><a href="./introduction.html" class="nav-link">公司介绍</a></li>       
+    </ul>
+  </div>
+</nav>    
+    
+<div style="margin-right: 100px;margin-left: 100px;">    
+<div class="wrapper">
+<div class="blog-container">
+  
+  <div class="blog-header">
+    <div class="blog-cover">
+      <div class="blog-author">
+        <h3>吾拳天下</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a href="#">公司简介</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p><a href="#">吾拳天下（北京）文化发展有限公司</a>成立于2014年，我公司主要从事体育赛事、体育宣传推广、体育文化栏目等相关内容。是中国钓鱼协会、中国飞镖协会新媒体推广合作伙伴。曾经斥资5000万在北京卫视成功举办一档拳击类综艺栏目（12期）。同时在全国各地都曾经举办过大型体育赛事。</p>
+      <p>我公司拥有5名国家1级运动员、4名国际体育赛事推广人、22名网络主播、2个常备摄制组、视频剪辑、软件开发人员30余人。</p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a href="#">国家1级运动员</a></li>
+        <li><a href="#">国际体育赛事推广人</a></li>
+        <li><a href="#">网络直播</a></li>
+        <li><a href="#">常备摄制组</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+    </div>
+    </div>
+
+<!--<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+<!-- partial -->
+  <script src='./js/jquery.min.js'></script>
+
+</body>
+</html>
